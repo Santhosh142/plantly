@@ -10,7 +10,7 @@ type Props = {
 export function PlantlyButton({ title, onPress }: Props) {
   const handlePressed = () => {
     if (Platform.OS !== "web") {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Soft);
     }
     onPress();
   };
